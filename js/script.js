@@ -43,5 +43,12 @@ createApp({
             this.todoList.push(object);
             this.newTask = '';
         },
+        doneTask(index) {
+            if (this.todoList[index].done) {
+                this.todoList[index].done = false
+            } else {
+                this.todoList[index].done = true
+            }
+        }
     },
 }).mount('#app')

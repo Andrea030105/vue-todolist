@@ -32,7 +32,7 @@
                                 <ul class="list-unstyled">
                                     <li v-for="(item, index) in todoList">
                                         <div class="d-flex justify-content-between my-3">
-                                            <div :class="(item.done) ?'line-through' : ''">
+                                            <div @click="doneTask(index)" :class="(item.done) ?'line-through' : ''">
                                                 {{index+1}} - {{item.text}}
                                             </div>
                                             <div>

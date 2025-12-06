@@ -13,3 +13,7 @@
 .line-through {
     text-decoration: line-through;
 }
+
+li {
+    cursor: pointer;
+}

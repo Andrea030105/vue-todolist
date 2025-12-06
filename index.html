@@ -29,9 +29,18 @@
                     <div class="d-flex justify-content-center mt-5">
                         <div class="container-todo">
                             <div class="p-4">
-                                <ul class="list-unstyled" v-for="(item, index) in todoList">
-                                    <li :class="(item.done) ?'line-through' : ''">
-                                        {{index+1}} - {{item.text}}
+                                <ul class="list-unstyled">
+                                    <li v-for="(item, index) in todoList">
+                                        <div class="d-flex justify-content-between my-3">
+                                            <div :class="(item.done) ?'line-through' : ''">
+                                                {{index+1}} - {{item.text}}
+                                            </div>
+                                            <div>
+                                                <button @click="deleteTask(index)" class="btn btn-danger">
+                                                    <i class="fa-solid fa-x"></i>
+                                                </button>
+                                            </div>
+                                        </div>
                                     </li>
                                 </ul>
                             </div>

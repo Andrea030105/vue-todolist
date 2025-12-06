@@ -7,6 +7,7 @@
 .container-todo {
     border: 2px solid lightgray;
     border-radius: 20px;
+    min-width: 500px;
 }
 
 .line-through {

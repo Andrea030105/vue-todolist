@@ -29,4 +29,10 @@ createApp({
             ]
         }
     },
+    methods: {
+        deleteTask(index) {
+            console.log(this.todoList[index]);
+            this.todoList.splice(index, 1);
+        },
+    },
 }).mount('#app')

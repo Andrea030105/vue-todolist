@@ -18,7 +18,33 @@
 
 <body>
     <div id="app">
-        {{caio}}
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col text-center">
+                    <h1>ToDo List</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex justify-content-center mt-5">
+                        <div class="container-todo">
+                            <div class="p-4">
+                                <ul class="list-unstyled" v-for="(item, index) in todoList">
+                                    <li :class="(item.done) ?'line-through' : ''">
+                                        {{index+1}} - {{item.text}}
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-12">
+                    <div class="d-flex justify-content-center mt-3">
+                        <input type="text" placeholder="Inserici nuova todo">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 

@@ -3,3 +3,12 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.container-todo {
+    border: 2px solid lightgray;
+    border-radius: 20px;
+}
+
+.line-through {
+    text-decoration: line-through;
+}

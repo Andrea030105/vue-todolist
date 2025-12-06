@@ -5,7 +5,28 @@ const {
 createApp({
     data() {
         return {
-            caio: "caio"
+            todoList: [
+                {
+                    text: "Fare la spesa",
+                    done: true,
+                },
+                {
+                    text: "Fare la spesa",
+                    done: false,
+                },
+                {
+                    text: "Fare la spesa",
+                    done: true,
+                },
+                {
+                    text: "Fare la spesa",
+                    done: false,
+                },
+                {
+                    text: "Fare la spesa",
+                    done: true,
+                },
+            ]
         }
     },
 }).mount('#app')
